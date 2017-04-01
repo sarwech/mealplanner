@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
 body {
-	background: #edf0f1;
+	background: #1abc9c;
 }
 
 h3 {
 	text-align: center;
-	font-family: "Roboto";
+	font-family: 'Inconsolata', monospace;
+	font-size: 32px;
 	background: #edf0f1;
+	color: #ecf0f1;
+	background-color:rgba(255,0,0,0);
+
 }
 
 header {
@@ -18,7 +22,7 @@ header {
 .left {
 	float:left;
 	width: 50%;
-	border-right: 2px solid #d8e5e0;
+	border-right: 2px solid #16a085;
 	margin-top:-20px;
 }
 
@@ -36,12 +40,13 @@ ul {
 }
 
 h4, button, ul {
-	font-family: "Roboto";
+	font-family: 'Inconsolata', monospace;
 	padding-top:5px;
 }
 
 h4 {
 	margin-bottom:-3px;
+	color: #ecf0f1;
 }
 
 input {
@@ -50,6 +55,8 @@ input {
 	border: 0px;
 	box-shadow: none;
 	outline: none;
+	border-radius: 5px 5px 5px 5px;
+	background-color:rgba(0,0,0,0.2);
 
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -61,7 +68,8 @@ input {
 }
 
 button {
-	background:#fff;
+	background:#3498db;
+	color:#fff;
 	border-radius: 5px 5px 5px 5px;
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -69,3 +77,10 @@ button {
 	-o-appearance:none;
 	appearance:none;
 }
+
+/* Fix buttons sticking too close to the text 
+.remove {
+	float: right;
+}
+*/
+

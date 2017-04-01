@@ -1,4 +1,4 @@
-# mealplanner
+# MealPlanner - A 2 Column JS List Web App
 
 This is a work in progress!
 
@@ -11,4 +11,5 @@ Recent updates:
 Coming soon:
 - save your week and track new weeks, so you can see your meal history!
 - a new look!
+- input validation and other bug fixes
 - organise ingredients based on each meal!
