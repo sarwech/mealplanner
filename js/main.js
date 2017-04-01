@@ -222,7 +222,6 @@ function wednesdayAdd() {
 
         return false;  
     }
-
 }
 
 function wednesdayRemove() {
