@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Meal Planner</title>
+
+        <!-- Roboto font embed -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+        <!-- Responsive design -->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+      <header>
+        <h3>
+        MealPlanner
+        </h3>
+      </header>
+      <!-- Each day in the left column -->
+      <div class="container">
+        <div class="row">
+          <div class="col sm-6 left">
+            <div class="row">
+              <h4>
+              Monday
+              </h4>
+              <input type='text' id='user_input1' placeholder='Add a meal...'>
+              <button id="add1">Add</button>
+              <ol id="list_item1">
+              </ol>
+            </div>
+            <div class="row">
+              <h4>
+              Tuesday
+              </h4>
+              <input type='text' id='user_input2' >
+              <button id="add2">Add</button>
+              <ol id="list_item2">
+              </ol>
+            </div>
+            <div class="row">
+              <h4>
+              Wednesday
+              </h4>
+              <input type='text' id='user_input3' >
+              <button id="add3">Add</button>
+              <ol id="list_item3">
+              </ol>
+            </div>
+            <div class="row">
+              <h4>
+              Thursday
+              </h4>
+              <input type='text' id='user_input4' >
+              <button id="add4">Add</button>
+              <ol id="list_item4">
+              </ol>
+            </div>
+            <div class="row">
+              <h4>
+              Friday
+              </h4>
+              <input type='text' id='user_input5' >
+              <button id="add5">Add</button>
+              <ol id="list_item5">
+              </ol>
+            </div>
+            <div class="row">
+              <h4>
+              Saturday
+              </h4>
+              <input type='text' id='user_input6' >
+              <button id="add6">Add</button>
+              <ol id="list_item6">
+              </ol>
+            </div>
+            <div class="row">
+              <h4>
+              Sunday
+              </h4>
+              <input type='text' id='user_input7' >
+              <button id="add7">Add</button>
+              <ol id="list_item7">
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ingredients list in the right column -->
+      <div class="container">
+        <div class="row">
+          <div class="col sm-6 right">
+            <h4>
+            Ingredients
+            </h4>
+            <input type='text' id='ing_input' >
+            <button id="ing">Add</button>
+            <ol class="inglist" id="ing_list">
+
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript link -->
+      <script src="js/main.js"></script>
+    </body>
+
+</html>
