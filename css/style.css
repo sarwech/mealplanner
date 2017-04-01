@@ -83,23 +83,3 @@ button {
 	float: right;
 }
 */
-ttom:-10px;
-
-}
-
-button {
-	background:#3498db;
-	color:#fff;
-	border-radius: 5px 5px 5px 5px;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	-ms-appearance:none;
-	-o-appearance:none;
-	appearance:none;
-}
-
-/* Fix buttons sticking too close to the text 
-.remove {
-	float: right;
-}
-*/
