@@ -1,4 +1,4 @@
-# mealplanner
+# MealPlanner - A 2 Column JS List Web App
 
 This is a work in progress!
 

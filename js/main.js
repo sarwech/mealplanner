@@ -160,61 +160,6 @@ function wednesdayShow() {
 document.getElementById('add3').addEventListener('click', wednesdayAdd);
 wednesdayShow();
 
-
-// For Ingredients
-
-function get_ingredients() {
-    var ingredients = new Array;
-    var ingredients_str = localStorage.getItem('inglist');
-    if (ingredients_str != null) {
-        ingredients = JSON.parse(ingredients_str); 
-    }
-    return ingredients;
-}
-
-function ingredientsAdd() {
-    var newingredient = document.getElementById('ing_input').value;
-
-    var ingredientlist = get_ingredients();
-    ingredientlist.push(newingredient);
-    localStorage.setItem('inglist', JSON.stringify(ingredientlist));
-
-    ingredientsShow();
-
-    return false;
-}
-
-function ingredientsRemove() {
-    var id = this.getAttribute('id');
-    var ingredients = get_ingredients();
-    ingredients.splice(id, 1);
-    localStorage.setItem('inglist', JSON.stringify(ingredients));
-
-    ingredientsShow();
-
-    return false;
-}
-
-function ingredientsShow() {
-    var ingredients = get_ingredients();
-
-    var html = '<ul>';
-    for(var i=0; i<ingredients.length; i++) {
-        html += '<li>' + ingredients[i] + '<button class="remove" id="' + i  + '">x</button></li>';
-    };
-    html += '</ul>';
-
-    document.getElementById('ing_list').innerHTML = html;
-
-    var buttons = document.getElementsByClassName('remove');
-    for (var i=0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', ingredientsRemove);
-    };
-}
-
-document.getElementById('ing').addEventListener('click', ingredientsAdd);
-ingredientsShow();
-
 // For Thursday
 
 function get_thursday() {
