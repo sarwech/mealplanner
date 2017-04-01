@@ -1,3 +1,82 @@
+// Input Validation
+/*
+function inputFields() {
+    var boxInput = document.getElementById('input').value;
+    if (boxInput == "") {
+        alert("Nothing was entered. Try again.");
+    }
+    else {
+        return boxInput;
+    }
+}
+*/
+
+// Enter to submit the text!!!
+
+document.getElementById("user_input1")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add1").click();
+    }
+});
+
+document.getElementById("user_input2")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add2").click();
+    }
+});
+
+document.getElementById("user_input3")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add3").click();
+    }
+});
+
+document.getElementById("user_input4")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add4").click();
+    }
+});
+
+document.getElementById("user_input5")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add5").click();
+    }
+});
+
+document.getElementById("user_input6")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add6").click();
+    }
+});
+
+document.getElementById("user_input7")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("add7").click();
+    }
+});
+
+document.getElementById("ing_input")
+.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13 ) {
+        document.getElementById("ing").click();
+    }
+});
+
 // For Monday!!!
 
 function get_monday() {
@@ -10,15 +89,22 @@ function get_monday() {
 }
 
 function mondayAdd() {
+
     var newmonday = document.getElementById('user_input1').value;
+    if (newmonday == "") {
+        alert("Nothing was entered. Try again.");
+    }
+    else {
+        var mondaylist = get_monday();
+        mondaylist.push(newmonday);
+        localStorage.setItem('mondaymeals', JSON.stringify(mondaylist));
 
-    var mondaylist = get_monday();
-    mondaylist.push(newmonday);
-    localStorage.setItem('mondaymeals', JSON.stringify(mondaylist));
+        mondayShow();
 
-    mondayShow();
+        return false;
 
-    return false;
+    }
+
 }
 
 function mondayRemove() {
@@ -65,14 +151,19 @@ function get_tuesday() {
 
 function tuesdayAdd() {
     var newtuesday = document.getElementById('user_input2').value;
+    if (newtuesday == "") {
+        alert("Nothing was entered. Try again.");
+    }
+    else {
+        var tuesdaylist = get_tuesday();
+        tuesdaylist.push(newtuesday);
+        localStorage.setItem('tuesdaymeals', JSON.stringify(tuesdaylist));
 
-    var tuesdaylist = get_tuesday();
-    tuesdaylist.push(newtuesday);
-    localStorage.setItem('tuesdaymeals', JSON.stringify(tuesdaylist));
+        tuesdayShow();
 
-    tuesdayShow();
+        return false;
+    }
 
-    return false;
 }
 
 function tuesdayRemove() {
@@ -119,14 +210,19 @@ function get_wednesday() {
 
 function wednesdayAdd() {
     var newwednesday = document.getElementById('user_input3').value;
+    if (newwednesday == "") {
+        alert("Nothing was entered. Try again.")
+    }
+    else {
+        var wednesdaylist = get_wednesday();
+        wednesdaylist.push(newwednesday);
+        localStorage.setItem('wednesdaymeals', JSON.stringify(wednesdaylist));
 
-    var wednesdaylist = get_wednesday();
-    wednesdaylist.push(newwednesday);
-    localStorage.setItem('wednesdaymeals', JSON.stringify(wednesdaylist));
+        wednesdayShow();
 
-    wednesdayShow();
+        return false;  
+    }
 
-    return false;
 }
 
 function wednesdayRemove() {
@@ -173,14 +269,19 @@ function get_thursday() {
 
 function thursdayAdd() {
     var newthursday = document.getElementById('user_input4').value;
+    if (newthursday == "") {
+        alert("Nothing was entered. Try again.")
+    }
+    else {
+        var thursdaylist = get_thursday();
+        thursdaylist.push(newthursday);
+        localStorage.setItem('thursdaymeals', JSON.stringify(thursdaylist));
 
-    var thursdaylist = get_thursday();
-    thursdaylist.push(newthursday);
-    localStorage.setItem('thursdaymeals', JSON.stringify(thursdaylist));
+        thursdayShow();
 
-    thursdayShow();
+        return false;  
+    }
 
-    return false;
 }
 
 function thursdayRemove() {
@@ -227,14 +328,19 @@ function get_friday() {
 
 function fridayAdd() {
     var newfriday = document.getElementById('user_input5').value;
+    if (newfriday == "") {
+        alert("Nothing was entered. Try again.")
+    }
+    else {
+        var fridaylist = get_friday();
+        fridaylist.push(newfriday);
+        localStorage.setItem('fridaymeals', JSON.stringify(fridaylist));
 
-    var fridaylist = get_friday();
-    fridaylist.push(newfriday);
-    localStorage.setItem('fridaymeals', JSON.stringify(fridaylist));
+        fridayShow();
 
-    fridayShow();
+        return false;   
+    }
 
-    return false;
 }
 
 function fridayRemove() {
@@ -281,14 +387,19 @@ function get_saturday() {
 
 function saturdayAdd() {
     var newsaturday = document.getElementById('user_input6').value;
+    if (newsaturday == "") {
+        alert("Nothing was entered. Try again.")
+    }
+    else {
+        var saturdaylist = get_saturday();
+        saturdaylist.push(newsaturday);
+        localStorage.setItem('saturdaymeals', JSON.stringify(saturdaylist));
 
-    var saturdaylist = get_saturday();
-    saturdaylist.push(newsaturday);
-    localStorage.setItem('saturdaymeals', JSON.stringify(saturdaylist));
+        saturdayShow();
 
-    saturdayShow();
+        return false;   
+    }
 
-    return false;
 }
 
 function saturdayRemove() {
@@ -336,14 +447,19 @@ function get_sunday() {
 
 function sundayAdd() {
     var newsunday = document.getElementById('user_input7').value;
+    if (newsunday == "") {
+        alert("Nothing was entered. Try again.")
+    }
+    else {
+        var sundaylist = get_sunday();
+        sundaylist.push(newsunday);
+        localStorage.setItem('sundaymeals', JSON.stringify(sundaylist));
 
-    var sundaylist = get_sunday();
-    sundaylist.push(newsunday);
-    localStorage.setItem('sundaymeals', JSON.stringify(sundaylist));
+        sundayShow();
 
-    sundayShow();
+        return false;     
+    }
 
-    return false;
 }
 
 function sundayRemove() {
@@ -390,14 +506,19 @@ function get_ingredients() {
 
 function ingredientsAdd() {
     var newingredient = document.getElementById('ing_input').value;
+    if (newingredient == "") {
+        alert("Nothing was entered. Try again.")
+    }
+    else {
+        var ingredientlist = get_ingredients();
+        ingredientlist.push(newingredient);
+        localStorage.setItem('inglist', JSON.stringify(ingredientlist));
 
-    var ingredientlist = get_ingredients();
-    ingredientlist.push(newingredient);
-    localStorage.setItem('inglist', JSON.stringify(ingredientlist));
+        ingredientsShow();
 
-    ingredientsShow();
+        return false;      
+    }
 
-    return false;
 }
 
 function ingredientsRemove() {
