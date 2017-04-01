@@ -211,9 +211,7 @@ function get_wednesday() {
 function wednesdayAdd() {
     var newwednesday = document.getElementById('user_input3').value;
     if (newwednesday == "") {
-=======
         alert("Nothing was entered. Try again.")
->>>>>>> newlook
     }
     else {
         var wednesdaylist = get_wednesday();
@@ -221,16 +219,9 @@ function wednesdayAdd() {
         localStorage.setItem('wednesdaymeals', JSON.stringify(wednesdaylist));
 
         wednesdayShow();
-<<<<<<< HEAD
 
         return false;  
     }
-
-=======
-
-        return false;  
-    }
->>>>>>> newlook
 }
 
 function wednesdayRemove() {
