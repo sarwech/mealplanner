@@ -13,6 +13,8 @@ function inputFields() {
 
 // Enter to submit the text!!!
 
+var dltbtn = "Delete";
+
 document.getElementById("user_input1")
 .addEventListener("keyup", function(event) {
     event.preventDefault();
@@ -123,7 +125,7 @@ function mondayShow() {
 
     var html = '<ul>';
     for(var i=0; i<monday.length; i++) {
-        html += '<li>' + monday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + monday[i] + '<button class="remove" id="' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -182,7 +184,7 @@ function tuesdayShow() {
 
     var html = '<ul>';
     for(var i=0; i<tuesday.length; i++) {
-        html += '<li>' + tuesday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + tuesday[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -240,7 +242,7 @@ function wednesdayShow() {
 
     var html = '<ul>';
     for(var i=0; i<wednesday.length; i++) {
-        html += '<li>' + wednesday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + wednesday[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -299,7 +301,7 @@ function thursdayShow() {
 
     var html = '<ul>';
     for(var i=0; i<thursday.length; i++) {
-        html += '<li>' + thursday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + thursday[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -358,7 +360,7 @@ function fridayShow() {
 
     var html = '<ul>';
     for(var i=0; i<friday.length; i++) {
-        html += '<li>' + friday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + friday[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -417,7 +419,7 @@ function saturdayShow() {
 
     var html = '<ul>';
     for(var i=0; i<saturday.length; i++) {
-        html += '<li>' + saturday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + saturday[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -477,7 +479,7 @@ function sundayShow() {
 
     var html = '<ul>';
     for(var i=0; i<sunday.length; i++) {
-        html += '<li>' + sunday[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + sunday[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
@@ -536,7 +538,7 @@ function ingredientsShow() {
 
     var html = '<ul>';
     for(var i=0; i<ingredients.length; i++) {
-        html += '<li>' + ingredients[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li>' + ingredients[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
