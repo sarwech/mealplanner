@@ -546,7 +546,7 @@ function ingredientsShow() {
 
     var html = '<ul>';
     for(var i=0; i<ingredients.length; i++) {
-        html += '<li>' + ingredients[i] + '<button class="remove" id=' + i  + '">' + dltbtn + '</button></li>';
+        html += '<li>' + ingredients[i] + '<button class="remove" id="' + i + '">' + dltbtn + '</button></li>';
     };
     html += '</ul>';
 
