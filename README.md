@@ -12,7 +12,7 @@ Create a weekly plan of your meals and combine that with a list of ingredients, 
 
 v0.1 v v0.2:
 
-![alt tag](https://github.com/sashioni/mealplanner/blob/master/version.png)
+![alt tag](https://github.com/sashioni/mealplanner/blob/master/versions.png)
 
 # Coming soon:
 - small update to fix delete buttons and remove 'add' for an improved look
