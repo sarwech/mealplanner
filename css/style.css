@@ -37,8 +37,7 @@ ul {
 	list-style-type: none;
 	padding-left:0;
 	margin-left:-40px;
-	float:left
-	position:fixed;
+	float:left;
 	margin-top: -20px;
 	color: #ecf0f1;
 	word-wrap: break-word
@@ -96,6 +95,7 @@ button {
 div > button {
 	display: none;
 }
+
 
 /* Fix buttons sticking too close to the text 
 .remove {

@@ -102,6 +102,7 @@ function mondayAdd() {
         localStorage.setItem('mondaymeals', JSON.stringify(mondaylist));
 
         mondayShow();
+        user_input1.value = "";
 
         return false;
 
@@ -162,6 +163,7 @@ function tuesdayAdd() {
         localStorage.setItem('tuesdaymeals', JSON.stringify(tuesdaylist));
 
         tuesdayShow();
+        user_input2.value = "";
 
         return false;
     }
@@ -221,6 +223,7 @@ function wednesdayAdd() {
         localStorage.setItem('wednesdaymeals', JSON.stringify(wednesdaylist));
 
         wednesdayShow();
+        user_input3.value = "";
 
         return false;  
     }
@@ -279,6 +282,7 @@ function thursdayAdd() {
         localStorage.setItem('thursdaymeals', JSON.stringify(thursdaylist));
 
         thursdayShow();
+        user_input4.value = "";
 
         return false;  
     }
@@ -338,6 +342,7 @@ function fridayAdd() {
         localStorage.setItem('fridaymeals', JSON.stringify(fridaylist));
 
         fridayShow();
+        user_input5.value = "";
 
         return false;   
     }
@@ -397,6 +402,7 @@ function saturdayAdd() {
         localStorage.setItem('saturdaymeals', JSON.stringify(saturdaylist));
 
         saturdayShow();
+        user_input6.value = "";
 
         return false;   
     }
@@ -457,6 +463,7 @@ function sundayAdd() {
         localStorage.setItem('sundaymeals', JSON.stringify(sundaylist));
 
         sundayShow();
+        user_input7.value = "";
 
         return false;     
     }
@@ -516,6 +523,7 @@ function ingredientsAdd() {
         localStorage.setItem('inglist', JSON.stringify(ingredientlist));
 
         ingredientsShow();
+        ing_input.value = "";
 
         return false;      
     }
