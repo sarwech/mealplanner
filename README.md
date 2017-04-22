@@ -15,7 +15,8 @@ v0.1 v v0.2:
 ![alt tag](https://github.com/sashioni/mealplanner/blob/master/versions.png)
 
 # Coming soon:
-- small update to fix delete buttons and remove 'add' for an improved look
+
 - save your week and track new weeks, so you can see your meal history!
 - more bug fixes (clear field after submission)
 - ingredients counter
+- meals autofill and pull ingredients automatically
